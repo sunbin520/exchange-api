@@ -23,31 +23,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="WebSocketClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/WebSocketClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2160">
-              <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
-              <folding>
-                <element signature="e#15064#15065#0" expanded="true" />
-                <element signature="e#15132#15133#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RunExample.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/RunExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -89,8 +65,8 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
-    <option name="width" value="1048" />
-    <option name="height" value="991" />
+    <option name="width" value="1578" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -108,53 +84,36 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket_api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket_api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket_api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket_api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="kits" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="netty_client_demo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="zb_netty_client_java" type="462c0819:PsiDirectoryNode" />
+              <item name="websocket_api" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -164,7 +123,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,15 +277,17 @@
       <workItem from="1534126173082" duration="1355000" />
       <workItem from="1534150047939" duration="876000" />
       <workItem from="1534150973809" duration="18000" />
+      <workItem from="1534305217990" duration="74000" />
+      <workItem from="1534307598331" duration="312000" />
+      <workItem from="1534310896321" duration="45000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11784000" />
+    <option name="totallyTimeSpent" value="12215000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -340,7 +301,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18040685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18683083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07762313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -375,8 +336,61 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/WebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2664">
+          <caret line="154" column="71" lean-forward="true" selection-start-line="154" selection-start-column="71" selection-end-line="154" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/RunExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/WebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/RunExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/WebSocketClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -394,8 +408,9 @@
         <state relative-caret-position="4512">
           <caret line="231" column="8" lean-forward="false" selection-start-line="231" selection-start-column="8" selection-end-line="231" selection-end-column="8" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -413,8 +428,9 @@
         <state relative-caret-position="408">
           <caret line="56" column="57" lean-forward="false" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -432,8 +448,9 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -451,8 +468,9 @@
         <state relative-caret-position="408">
           <caret line="56" column="57" lean-forward="false" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,8 +488,9 @@
         <state relative-caret-position="1824">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -629,18 +648,19 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/RunExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="22" column="36" lean-forward="false" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/websocketx/client/WebSocketClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2160">
-          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        <state relative-caret-position="-3638">
+          <caret line="145" column="71" lean-forward="false" selection-start-line="145" selection-start-column="71" selection-end-line="145" selection-end-column="71" />
           <folding>
-            <element signature="e#15064#15065#0" expanded="true" />
-            <element signature="e#15132#15133#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#10055#10056#0" expanded="true" />
+            <element signature="e#10123#10124#0" expanded="true" />
           </folding>
         </state>
       </provider>

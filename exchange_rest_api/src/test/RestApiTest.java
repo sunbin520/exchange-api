@@ -50,6 +50,7 @@ public class RestApiTest {
         paramMap.put("amount", "1");
         paramMap.put("tradeType", "1");
         paramMap.put("currency", "btm_btc");
+        paramMap.put("reqTime",System.currentTimeMillis());
         signUp(paramMap);
         String result = restTemplate.getForObject(domainUrl + "/api/v2/order?method={method}" +
                 "&accesskey={accesskey}&price={price}&amount={amount}&tradeType={tradeType}&currency={currency}" +
@@ -64,6 +65,7 @@ public class RestApiTest {
         paramMap.put("accesskey", accessKey);
         paramMap.put("id", "578352");
         paramMap.put("currency", "btm_btc");
+        paramMap.put("reqTime",System.currentTimeMillis());
         signUp(paramMap);
         String result = restTemplate.getForObject(domainUrl + "/api/v2/cancel?method={method}" +
                 "&accesskey={accesskey}&id={id}&currency={currency}" +
@@ -78,6 +80,7 @@ public class RestApiTest {
         paramMap.put("accesskey", accessKey);
         paramMap.put("id", "578732");
         paramMap.put("currency", "btm_btc");
+        paramMap.put("reqTime",System.currentTimeMillis());
         signUp(paramMap);
         String result = restTemplate.getForObject(domainUrl + "/api/v2/getOrder?method={method}" +
                 "&accesskey={accesskey}&id={id}&currency={currency}" +
@@ -94,6 +97,7 @@ public class RestApiTest {
         paramMap.put("currency", "eth_btc");
         paramMap.put("pageIndex", 1);
         paramMap.put("pageSize", 40);
+        paramMap.put("reqTime",System.currentTimeMillis());
         signUp(paramMap);
         String result = restTemplate.getForObject(domainUrl + "/api/v2/getOrders?method={method}" +
                 "&accesskey={accesskey}&tradeType={tradeType}&currency={currency}&pageIndex={pageIndex}&pageSize={pageSize}" +
@@ -106,6 +110,7 @@ public class RestApiTest {
         HashMap<String, Object> paramMap = new LinkedHashMap();
         paramMap.put("method", "getAccountInfo");
         paramMap.put("accesskey", accessKey);
+        paramMap.put("reqTime",System.currentTimeMillis());
         signUp(paramMap);
         String result = restTemplate.getForObject(domainUrl + "/api/v2/getAccountInfo?method={method}" +
                 "&accesskey={accesskey}" +
@@ -121,7 +126,6 @@ public class RestApiTest {
             String secret = EncryptDigestUtil.digest(secretKey);
             String sign = EncryptDigestUtil.hmacSign(params, secret);
             paramMap.put("sign", sign);
-            paramMap.put("reqTime", System.currentTimeMillis());
         } catch (Exception ex) {
             ex.printStackTrace();
         }

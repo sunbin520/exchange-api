@@ -143,7 +143,7 @@ public class WebSocketClient {
 		data.put("tradeType",1);		// 0  买单   | 1  卖单
 		data.put("price",100000);				//价格
 		data.put("amount",0.1);			//数量
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		
 		for(Map.Entry<String,Object> entry:data.entrySet()){
             String key = entry.getKey();
@@ -152,7 +152,7 @@ public class WebSocketClient {
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(signMap);
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
@@ -171,7 +171,7 @@ public class WebSocketClient {
 		data.put("accesskey", accessKey);	//公钥
 		data.put("id","105853");			//下单时候返回的id
 		data.put("currency","qtum_btc");		//交易类型
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		for(Map.Entry<String,Object> entry:data.entrySet()){
             String key = entry.getKey();
             signMap.put(key, entry.getValue().toString());
@@ -179,7 +179,7 @@ public class WebSocketClient {
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(signMap);
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
@@ -200,7 +200,7 @@ public class WebSocketClient {
 		data.put("currency","qtum_qc");		//交易类型
 		//data.put("tradeType",0);		// 0  买单   | 1  卖单
 		data.put("id","87933");				//下单时候返回的id
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		for(Map.Entry<String,Object> entry:data.entrySet()){
             String key = entry.getKey();
             signMap.put(key, entry.getValue().toString());
@@ -208,7 +208,7 @@ public class WebSocketClient {
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(signMap);
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
@@ -229,7 +229,7 @@ public class WebSocketClient {
 		data.put("currency","eth_btc");		//交易类型
 		data.put("tradeType",0);		// 0  买单   | 1  卖单
 		//data.put("id","87933");				//下单时候返回的id
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		for(Map.Entry<String,Object> entry:data.entrySet()){
             String key = entry.getKey();
             signMap.put(key, entry.getValue().toString());
@@ -237,7 +237,7 @@ public class WebSocketClient {
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(signMap);
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
@@ -258,7 +258,7 @@ public class WebSocketClient {
 		data.put("currency","qtum_qc");		//交易类型
 		//data.put("tradeType",0);		// 0  买单   | 1  卖单
 		//data.put("id","87933");				//下单时候返回的id
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		for(Map.Entry<String,Object> entry:data.entrySet()){
             String key = entry.getKey();
             signMap.put(key, entry.getValue().toString());
@@ -266,69 +266,15 @@ public class WebSocketClient {
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(signMap);
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
 	}
 	
-	/**
-	 * 获取数字资产提现记录
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getWithdrawRecord(){
-		JSONObject data=new JSONObject();
-		HashMap<String, String> signMap = new LinkedHashMap<>();
-		data.put("event", "addChannel");	
-		data.put("channel","getWithdrawRecord");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		data.put("currency","btc");		//交易类型
-		//data.put("tradeType",0);		// 0  买单   | 1  卖单
-		//data.put("id","87933");				//下单时候返回的id
-		
-		for(Map.Entry<String,Object> entry:data.entrySet()){
-            String key = entry.getKey();
-            signMap.put(key, entry.getValue().toString());
-        }
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(signMap);
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
+
 	
-	/**
-	 * 获取数字资产充值记录
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getChargeRecord(){
-		JSONObject data=new JSONObject();
-		HashMap<String, String> signMap = new LinkedHashMap<>();
-		data.put("event", "addChannel");	
-		data.put("channel","getChargeRecord");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		data.put("currency","btc");		//交易类型
-		//data.put("tradeType",0);		// 0  买单   | 1  卖单
-		//data.put("id","87933");				//下单时候返回的id
-		
-		for(Map.Entry<String,Object> entry:data.entrySet()){
-            String key = entry.getKey();
-            signMap.put(key, entry.getValue().toString());
-        }
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(signMap);
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
+
 	
 	/**
 	 * 获取用户信息
@@ -340,103 +286,16 @@ public class WebSocketClient {
 		data.put("event", "addChannel");	
 		data.put("channel","getAccountInfo");		//频道
 		data.put("accesskey", accessKey);	//公钥	
-		
+		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
 		String secret = EncryDigestUtil.digest(secretKey);
 		String sign = EncryDigestUtil.getPlainSignString(JsonToMap(data));
 		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
+
 		data.put("sign", mySign);
 		System.out.println(data);
         this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
 	}
-	
-	/**
-	 * 获取用户充值地址
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getUserAddress(){
-		JSONObject data=new JSONObject();
-		data.put("event", "addChannel");	
-		data.put("channel","getUserAddress");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		data.put("currency","btc");		//交易类型
-		
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(JsonToMap(data));
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
-	
-	/**
-	 * 获取数字资产提现记录
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getWithdrawAddress(){
-		JSONObject data=new JSONObject();
-		data.put("event", "addChannel");	
-		data.put("channel","getRechargeAddress");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		data.put("currency","btc");		//交易类型
-		
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(JsonToMap(data));
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
-	
-	/**
-	 * 获取人民币充值记录
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getCnyRechargeRecord(){
-		JSONObject data=new JSONObject();
-		data.put("event", "addChannel");	
-		data.put("channel","getCnyChargeRecord");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		//data.put("currency","btc");		//交易类型
-		
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(JsonToMap(data));
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
-	
-	/**
-	 * 获取人民币提现记录
-	 * @param accessKey
-	 * @param secretKey
-	 */
-	public void getCnyWithdrawRecord(){
-		JSONObject data=new JSONObject();
-		data.put("event", "addChannel");	
-		data.put("channel","getCnyWithdrawRecord");		//频道
-		data.put("accesskey", accessKey);	//公钥	
-		//data.put("pageSize","10");		//显示多少条  默认10
-		//data.put("currency","btc");		//交易类型
-		
-		String secret = EncryDigestUtil.digest(secretKey);
-		String sign = EncryDigestUtil.getPlainSignString(JsonToMap(data));
-		String mySign = EncryDigestUtil.sign(sign, secret);
-		data.put("reqTime",String.valueOf(System.currentTimeMillis()));
-		data.put("sign", mySign);
-		System.out.println(data);
-        this.channel.writeAndFlush(new TextWebSocketFrame(data.toString()));
-	}
+
 	
 	/**
 	 * 注销客户端
