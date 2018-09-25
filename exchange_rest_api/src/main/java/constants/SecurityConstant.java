@@ -1,13 +1,13 @@
 /**
- * @Copyright 2016 kd.COM All rights reserved.
+ * @Copyright 2016 GV.ONE All rights reserved.
  */
 package constants;
 
 /**
  * 安全相关的常量
  * 
- * @author KD
- * @email KD
+ * @author GV
+ * @email GV
  * @date 2016年11月20日 下午4:31:20
  */
 public class SecurityConstant {
