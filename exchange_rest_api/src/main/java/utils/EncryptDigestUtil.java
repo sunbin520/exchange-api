@@ -1,5 +1,5 @@
 /**
- * @Copyright 2016 kd.COM All rights reserved.
+ * @Copyright 2016 GV.ONE All rights reserved.
  */
 package utils;
 import constants.SecurityConstant;
@@ -15,8 +15,8 @@ import java.util.SortedMap;
 /**
  * 数字加验签工具类
  * 
- * @author KD
- * @email KD
+ * @author GV
+ * @email GV
  * @date 2016年11月20日 下午4:31:25
  */
 public class EncryptDigestUtil {
