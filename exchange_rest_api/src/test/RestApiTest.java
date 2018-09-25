@@ -14,7 +14,7 @@ public class RestApiTest {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    private String domainUrl = "http://api.ikedou.net";
+    private String domainUrl = "http://api.goodvalue.one";
 
     private String accessKey = "";
     private String secretKey = "";
